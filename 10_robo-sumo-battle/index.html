@@ -121,6 +121,37 @@
             z-index: 1;
         }
 
+        /* Draw face section */
+        .draw-face-section {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 30px;
+            animation: slideUp 0.8s ease-out 0.5s both;
+        }
+
+        .draw-face-section h2 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .draw-face-section p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .draw-face-video {
+            display: flex;
+            justify-content: center;
+        }
+
+        .draw-face-video video {
+            max-width: 100%;
+            border-radius: 12px;
+        }
+
         .main-image {
             max-width: 350px;
             width: 100%;
@@ -247,6 +278,15 @@
         <section class="main-visual">
             <div class="main-image-container">
                 <img src="main.png" alt="toioロボット力士" class="main-image">
+            </div>
+        </section>
+
+        <!-- Draw face section -->
+        <section class="draw-face-section">
+            <h2>紙コップに顔を描こう</h2>
+            <p>2つの紙コップに顔を描いてください。一つは自分で、もう一つはコンピュータープレーヤーです。</p>
+            <div class="draw-face-video">
+                <video src="draw_face.mp4" autoplay muted loop playsinline controls></video>
             </div>
         </section>
 
